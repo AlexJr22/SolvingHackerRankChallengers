@@ -3,10 +3,9 @@
 // this part is used to pass the parameters to the method called
 //==============================================================
 
-List<int> arr = [1, 2, 3, 4, 5];
-
+var s = "07:05:45PM";
 
 //==============================================================
 
 // call the method to want execute
-Answers.MinMaxSum(arr);
+Console.WriteLine(Answers.TimeConversion(s));

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,16 @@ namespace SolveHackerRankChallengers.Challengers
                 MaxSum += arr[i];
 
             Console.Write($"{MinSum} {MaxSum}");
+        }
+
+        public static string TimeConversion(string s)
+        {
+            DateTime Hour;
+
+            if (DateTime.TryParse(s, out Hour))
+                return Hour.ToString("HH:mm:ss");
+            else
+                return "incompatible format";
         }
     }
 }
