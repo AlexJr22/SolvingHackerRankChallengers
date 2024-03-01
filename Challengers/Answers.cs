@@ -43,7 +43,7 @@ namespace SolveHackerRankChallengers.Challengers
             for (int i = 0; i < (Length - 1); i++)
                 MinSum += arr[i];
 
-            // MazSum
+            // MaxSum
             for (int i = 1; i < Length; i++)
                 MaxSum += arr[i];
 
