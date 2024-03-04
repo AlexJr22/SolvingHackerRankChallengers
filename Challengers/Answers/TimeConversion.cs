@@ -8,8 +8,8 @@ public static class TimeConversion
 
         if (DateTime.TryParse(s, out Hour))
             return Hour.ToString("HH:mm:ss");
-        else
-            return "incompatible format";
+
+        return "incompatible format";
     }
 
 }
