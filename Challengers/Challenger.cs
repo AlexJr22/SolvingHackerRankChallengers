@@ -7,10 +7,10 @@ public static class Challenger
     // This class will be responsible for calling the challenge methods
     public static void Start()
     {
-        int n = 6;
-        int k = 3;
-        List<int> arr = [1, 3, 2, 6, 1, 2];
+        List<int> n = [1,1,2,2,3,3,3,4,5,5,6,6];
 
-        Console.WriteLine(DivisibleSumPairs.Start(n, k, arr));
+        var a = Lonelyinteger.Start(n);
+
+        Console.WriteLine(a);
     }
 }
