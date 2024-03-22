@@ -7,10 +7,13 @@ public static class Challenger
     // This class will be responsible for calling the challenge methods
     public static void Start()
     {
-        List<int> n = [1,1,2,2,3,3,3,4,5,5,6,6];
+        List<int> grades = [4, 73, 67, 38, 33];
 
-        var a = Lonelyinteger.Start(n);
+        var g = GradingStudents.Start(grades);
 
-        Console.WriteLine(a);
+        foreach (var grade in g)
+        {
+            Console.WriteLine(grade);
+        }
     }
 }
