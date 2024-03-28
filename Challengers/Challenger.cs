@@ -1,4 +1,5 @@
 ﻿using SolvingHackerRankChallengers.Challengers.Answers;
+using System.Diagnostics;
 
 namespace SolvingHackerRankChallengers.Challengers;
 
@@ -7,13 +8,14 @@ public static class Challenger
     // This class will be responsible for calling the challenge methods
     public static void Start()
     {
-        List<int> grades = [4, 73, 67, 38, 33];
+        List<string> str = ["ab", "ab", "abc"];
+        List<string> query = ["ab", "ac", "abc"];
 
-        var g = GradingStudents.Start(grades);
+        // 2, 0, 1
 
-        foreach (var grade in g)
-        {
-            Console.WriteLine(grade);
-        }
+        var Results = MatchingStrings.Start(str, query);
+
+        foreach (int n in Results)
+            Console.WriteLine(n);
     }
 }
