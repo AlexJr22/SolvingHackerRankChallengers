@@ -8,20 +8,13 @@ public static class DiagonalDifference
             firstDiagonal = 0,
             secondDiagonal = 0;
 
-        for (int row = 0; row < arr.Count; row++)
+        for (int rowAndCol = 0; rowAndCol < arr.Count; rowAndCol++)
         {
-            int col = row;
+            firstDiagonal += arr[rowAndCol][rowAndCol];
 
-            firstDiagonal += arr[row][col];
+            arr[rowAndCol].Reverse();
 
-            arr[row].Reverse();
-        }
-
-        for (int row = 0; row < arr.Count; row++)
-        {
-            int col = row;
-
-            secondDiagonal += arr[row][col];
+            secondDiagonal += arr[rowAndCol][rowAndCol];
         }
 
         sum = Math.Abs(firstDiagonal - secondDiagonal);
