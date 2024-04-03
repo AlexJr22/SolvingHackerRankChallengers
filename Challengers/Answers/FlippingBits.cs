@@ -1,4 +1,6 @@
-﻿namespace SolvingHackerRankChallengers.Challengers.Answers;
+﻿using System;
+
+namespace SolvingHackerRankChallengers.Challengers.Answers;
 
 public static class FlippingBits
 {
@@ -56,7 +58,7 @@ public static class FlippingBits
             if (ListOfBits[index] == 0)
                 NewListOfBits[index] = 1;
 
-            if (ListOfBits[i] == 1)
+            if (ListOfBits[index] == 1)
                 NewListOfBits[index] = 0;
         }
 
@@ -74,7 +76,7 @@ public static class FlippingBits
 
         for (int index = 0; index < bits.Count; index++)
         {
-            var powResult = (long)Math.Pow(2, i);
+            var powResult = (long)Math.Pow(2, index);
 
             results.Add(bits[index] * powResult);
         }
